@@ -30,7 +30,7 @@ export default function Login() {
 
       {status === "sent" ? (
         <p className="login-message">
-          Te mandamos un link a <strong>{email}</strong>. Abrilo desde este mismo dispositivo para entrar.
+          Te enviamos un link a <strong>{email}</strong>. Ábrelo desde este mismo dispositivo para entrar.
         </p>
       ) : (
         <form className="login-form" onSubmit={handleSubmit}>
@@ -42,7 +42,7 @@ export default function Login() {
             type="email"
             required
             className="modal-select"
-            placeholder="vos@ejemplo.com"
+            placeholder="tu@ejemplo.com"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />

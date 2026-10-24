@@ -19,7 +19,7 @@ export default function JoinLeague({ userId, onCreated }) {
       .single();
 
     if (insertError || !data) {
-      setError("No se pudo crear tu perfil, probá de nuevo.");
+      setError("No se pudo crear tu perfil, intenta de nuevo.");
       setSubmitting(false);
       return;
     }
@@ -29,7 +29,7 @@ export default function JoinLeague({ userId, onCreated }) {
   return (
     <div className="login-screen">
       <h1 className="app-title">HUNGER LEAGUE</h1>
-      <p className="login-message">Elegí cómo te van a ver en la tabla de posiciones.</p>
+      <p className="login-message">Elige cómo te van a ver en la tabla de posiciones.</p>
 
       <form className="login-form" onSubmit={handleSubmit}>
         <input
